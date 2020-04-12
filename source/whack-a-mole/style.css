@@ -1,0 +1,34 @@
+.square {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: black;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+    height: 500px;
+}
+
+.mole {
+    background-image: url(mole.png);
+    background-size: cover;
+}
+
+.inline-div {
+    display: block;
+    text-align: left;
+}
+
+h2 {
+  display: inline-block;
+  text-align: center;
+}
+
+#speed-up {
+    color: red;
+}
