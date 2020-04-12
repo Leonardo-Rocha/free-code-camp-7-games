@@ -10,8 +10,8 @@ highestScore.textContent = localStorage['highestScore'] || '0'
 let result = 0;
 let currentTime = timeLeft.textContent
 
-let moleSound = new Audio("mole_sound.mp3");
-let hitSound = new Audio("punch.mp3")
+let moleSound = new Audio("../media/audio/mole_sound.mp3");
+let hitSound = new Audio("../media/audio/punch.mp3")
 moleSound.volume = .7;
 hitSound.volume = .5;
 let spawnInterval = 800;

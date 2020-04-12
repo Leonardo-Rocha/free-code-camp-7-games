@@ -5,51 +5,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'cheeseburger',
-            img: '../source/memory-game/images/cheeseburger.png'
+            img: '../media/images/cheeseburger.png'
         },
         {
             name: 'cheeseburger',
-            img: '../source/memory-game/images/cheeseburger.png'
+            img: '../media/images/cheeseburger.png'
         },
         {
             name: 'fries',
-            img: '../source/memory-game/images/fries.png'
+            img: '../media/images/fries.png'
         },
         {
             name: 'fries',
-            img: '../source/memory-game/images/fries.png'
+            img: '../media/images/fries.png'
         },
         {
             name: 'hotdog',
-            img: '../source/memory-game/images/hotdog.png'
+            img: '../media/images/hotdog.png'
         },
         {
             name: 'hotdog',
-            img: '../source/memory-game/images/hotdog.png'
+            img: '../media/images/hotdog.png'
         },
         {
             name: 'ice-cream',
-            img: '../source/memory-game/images/ice-cream.png'
+            img: '../media/images/ice-cream.png'
         },
         {
             name: 'ice-cream',
-            img: '../source/memory-game/images/ice-cream.png'
+            img: '../media/images/ice-cream.png'
         },
         {
             name: 'milkshake',
-            img: '../source/memory-game/images/milkshake.png'
+            img: '../media/images/milkshake.png'
         },
         {
             name: 'milkshake',
-            img: '../source/memory-game/images/milkshake.png'
+            img: '../media/images/milkshake.png'
         },
         {
             name: 'pizza',
-            img: '../source/memory-game/images/pizza.png'
+            img: '../media/images/pizza.png'
         },
         {
             name: 'pizza',
-            img: '../source/memory-game/images/pizza.png'
+            img: '../media/images/pizza.png'
         },
     ];
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for(let i = 0; i < cardArray.length; i++) {
             let card = document.createElement('img');
-            card.setAttribute('src', '../source/memory-game/images/blank.png');
+            card.setAttribute('src', '../media/images/blank.png');
             card.setAttribute('data-id', i);
             card.addEventListener('click', flipCard);
             grid.appendChild(card);
@@ -78,16 +78,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // deep equal
         if(cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match');
-            cards[optionOneId].setAttribute('src', '../source/memory-game/images/white.png');
-            cards[optionTwoId].setAttribute('src', '../source/memory-game/images/white.png');
+            cards[optionOneId].setAttribute('src', '../media/images/white.png');
+            cards[optionTwoId].setAttribute('src', '../media/images/white.png');
             // disable event listeners
             cards[optionOneId].removeEventListener('click', flipCard);
             cards[optionTwoId].removeEventListener('click', flipCard);
             cardsWon.push(cardsChosen);
         }
         else {
-            cards[optionOneId].setAttribute('src', '../source/memory-game/images/blank.png');
-            cards[optionTwoId].setAttribute('src', '../source/memory-game/images/blank.png');
+            cards[optionOneId].setAttribute('src', '../media/images/blank.png');
+            cards[optionTwoId].setAttribute('src', '../media/images/blank.png');
             cards[optionOneId].addEventListener('click', flipCard);
             cards[optionTwoId].addEventListener('click', flipCard);
             alert('Sorry, try again');
