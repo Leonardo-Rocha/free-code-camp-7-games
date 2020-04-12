@@ -8,8 +8,20 @@
     ],
     "rewrites": [
       {
-        "source": "**/source/**",
+        "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/media{,/**}",
+        "destination": "/*.html"
+      },
+      {
+        "source": "/js{,/**}",
+        "destination": "/*.html"
+      },
+      {
+        "source": "/css{,/**}",
+        "destination": "/*.html"
       }
     ]
   }
